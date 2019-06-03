@@ -113,7 +113,6 @@
 		422F214922A2979300E4B013 = {
 			isa = PBXGroup;
 			children = (
-				422F216122A2979400E4B013 /* Info.plist */,
 				422F215422A2979300E4B013 /* OpenWeather */,
 				422F216922A2979400E4B013 /* OpenWeatherTests */,
 				422F215322A2979300E4B013 /* Products */,
@@ -160,6 +159,7 @@
 		422F217522A2996700E4B013 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				422F216122A2979400E4B013 /* Info.plist */,
 				422F215C22A2979400E4B013 /* Assets.xcassets */,
 				422F217622A2996700E4B013 /* source.gif */,
 				422F21D222A3A74500E4B013 /* background.jpg */,
@@ -644,7 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OpenWeather/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -662,7 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OpenWeather/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
