@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CityWeatherCell" rowHeight="81" id="vG0-E1-yoE" customClass="CityWeatherCell" customModule="OpenWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vG0-E1-yoE" id="sEZ-1I-2n1">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-TK-mdE">
+                        <rect key="frame" x="86" y="15" width="252" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwP-TX-PSo">
+                        <rect key="frame" x="86" y="48" width="273" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-A4-717">
+                        <rect key="frame" x="16" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="6Qz-NN-j29"/>
+                            <constraint firstAttribute="width" constant="50" id="Ybh-PB-8Iu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vwP-TX-PSo" secondAttribute="bottom" constant="14.5" id="21J-eE-cIW"/>
+                    <constraint firstItem="vwP-TX-PSo" firstAttribute="trailing" secondItem="sEZ-1I-2n1" secondAttribute="trailingMargin" id="7uD-3O-ReK"/>
+                    <constraint firstItem="F8S-TK-mdE" firstAttribute="top" secondItem="sEZ-1I-2n1" secondAttribute="topMargin" constant="4" id="G2K-al-h6p"/>
+                    <constraint firstItem="hVH-A4-717" firstAttribute="leading" secondItem="sEZ-1I-2n1" secondAttribute="leadingMargin" id="Ifg-1t-Pb6"/>
+                    <constraint firstItem="vwP-TX-PSo" firstAttribute="top" secondItem="F8S-TK-mdE" secondAttribute="bottom" constant="9" id="J6t-op-efi"/>
+                    <constraint firstItem="F8S-TK-mdE" firstAttribute="leading" secondItem="hVH-A4-717" secondAttribute="trailing" constant="20" id="Nvv-pF-S4Q"/>
+                    <constraint firstItem="hVH-A4-717" firstAttribute="top" secondItem="sEZ-1I-2n1" secondAttribute="topMargin" constant="4" id="dRP-5N-KUB"/>
+                    <constraint firstAttribute="trailing" secondItem="F8S-TK-mdE" secondAttribute="trailing" constant="37" id="deQ-6B-VKe"/>
+                    <constraint firstItem="vwP-TX-PSo" firstAttribute="leading" secondItem="F8S-TK-mdE" secondAttribute="leading" id="wXy-dE-WLI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cityName" destination="F8S-TK-mdE" id="0MY-bd-ScO"/>
+                <outlet property="iconImage" destination="hVH-A4-717" id="gP3-vR-lHF"/>
+                <outlet property="temperatureLabel" destination="vwP-TX-PSo" id="hJg-ja-GqQ"/>
+            </connections>
+            <point key="canvasLocation" x="148" y="-88.15592203898052"/>
+        </tableViewCell>
+    </objects>
+</document>
