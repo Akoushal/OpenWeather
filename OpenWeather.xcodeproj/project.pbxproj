@@ -18,9 +18,6 @@
 		422F218B22A2996700E4B013 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F217922A2996700E4B013 /* Constants.swift */; };
 		422F218C22A2996700E4B013 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F217A22A2996700E4B013 /* Utilities.swift */; };
 		422F218E22A2996700E4B013 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F217C22A2996700E4B013 /* UIImage+Gif.swift */; };
-		422F218F22A2996700E4B013 /* UITableViewHeaderFooterView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F217D22A2996700E4B013 /* UITableViewHeaderFooterView+Identifier.swift */; };
-		422F219022A2996700E4B013 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F217E22A2996700E4B013 /* UIViewExtension.swift */; };
-		422F219122A2996700E4B013 /* AutoLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F217F22A2996700E4B013 /* AutoLayoutHelper.swift */; };
 		422F219222A2996700E4B013 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F218122A2996700E4B013 /* Configuration.swift */; };
 		422F219322A2996700E4B013 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F218322A2996700E4B013 /* HomeViewController.swift */; };
 		422F219422A2996700E4B013 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F218522A2996700E4B013 /* InitialViewController.swift */; };
@@ -64,9 +61,6 @@
 		422F217922A2996700E4B013 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		422F217A22A2996700E4B013 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		422F217C22A2996700E4B013 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
-		422F217D22A2996700E4B013 /* UITableViewHeaderFooterView+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Identifier.swift"; sourceTree = "<group>"; };
-		422F217E22A2996700E4B013 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		422F217F22A2996700E4B013 /* AutoLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutHelper.swift; sourceTree = "<group>"; };
 		422F218122A2996700E4B013 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		422F218322A2996700E4B013 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		422F218522A2996700E4B013 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -173,9 +167,6 @@
 				422F217922A2996700E4B013 /* Constants.swift */,
 				422F217A22A2996700E4B013 /* Utilities.swift */,
 				422F217C22A2996700E4B013 /* UIImage+Gif.swift */,
-				422F217D22A2996700E4B013 /* UITableViewHeaderFooterView+Identifier.swift */,
-				422F217E22A2996700E4B013 /* UIViewExtension.swift */,
-				422F217F22A2996700E4B013 /* AutoLayoutHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -463,7 +454,6 @@
 			files = (
 				422F219322A2996700E4B013 /* HomeViewController.swift in Sources */,
 				422F21BD22A2A47C00E4B013 /* WeatherViewModel.swift in Sources */,
-				422F219122A2996700E4B013 /* AutoLayoutHelper.swift in Sources */,
 				422F21D522A3D0C800E4B013 /* WeatherDetailViewController.swift in Sources */,
 				422F21B922A2A47C00E4B013 /* ForecastCell.swift in Sources */,
 				422F219522A2996700E4B013 /* OnboardViewController.swift in Sources */,
@@ -474,8 +464,6 @@
 				422F21C822A3871A00E4B013 /* WeatherHelperService.swift in Sources */,
 				422F215622A2979300E4B013 /* AppDelegate.swift in Sources */,
 				422F21CA22A3884700E4B013 /* BrokenPromise.swift in Sources */,
-				422F218F22A2996700E4B013 /* UITableViewHeaderFooterView+Identifier.swift in Sources */,
-				422F219022A2996700E4B013 /* UIViewExtension.swift in Sources */,
 				422F21D122A3A44C00E4B013 /* WeatherData.swift in Sources */,
 				422F218E22A2996700E4B013 /* UIImage+Gif.swift in Sources */,
 				422F218B22A2996700E4B013 /* Constants.swift in Sources */,
