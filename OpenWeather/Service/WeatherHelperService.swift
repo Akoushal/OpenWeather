@@ -15,11 +15,14 @@ public class WeatherHelperService {
     
     func getWeatherForAllCities(viewModel: WeatherViewModel) {
         viewModel.weatherData = []
+        
+        viewModel.isLoading = true
         viewModel.cities.forEach { (city) in
             performOperationForCity(cityName: city)
         }
         
         dispatchGroup.notify(queue: .main) {
+            viewModel.isLoading = false
             viewModel.weatherData = self.totalWeatherData
         }
     }

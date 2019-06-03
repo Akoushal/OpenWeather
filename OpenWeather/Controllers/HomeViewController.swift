@@ -11,14 +11,9 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var citiesTableView: UITableView!
-    let viewModel = WeatherViewModel(weatherApi: WeatherHelperService())
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
     
-    lazy var activityIndicator: UIActivityIndicatorView = {
-        let actInd = UIActivityIndicatorView(style: .gray)
-        actInd.translatesAutoresizingMaskIntoConstraints = false
-        actInd.hidesWhenStopped = true
-        return actInd
-    }()
+    let viewModel = WeatherViewModel(weatherApi: WeatherHelperService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +25,12 @@ class HomeViewController: UIViewController {
     // MARK: - UI Setup
     private func activityIndicatorStart() {
         // Code for show activity indicator view
-        activityIndicator.startAnimating()
+        activityIndicator?.startAnimating()
     }
     
     private func activityIndicatorStop() {
         // Code for stop activity indicator view
-        activityIndicator.stopAnimating()
+        activityIndicator?.stopAnimating()
     }
     
     private func setUpSubviews() {
@@ -44,14 +39,6 @@ class HomeViewController: UIViewController {
         self.citiesTableView.rowHeight = UITableView.automaticDimension
         self.citiesTableView.alpha = 0.0
         self.citiesTableView.tableFooterView = UIView()
-            
-        view.addSubview(activityIndicator)
-        // Auto layout
-        let horizontalConstraint = activityIndicator
-            .centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        let verticalConstraint = activityIndicator
-            .centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
     }
 
     private func setUpNavBarAttributes() {
