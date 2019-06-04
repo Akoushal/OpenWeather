@@ -16,5 +16,4 @@
 
 ## Dependency
 ### CocoaPods
-###### pod 'Alamofire'
 ###### pod 'PromiseKit'
