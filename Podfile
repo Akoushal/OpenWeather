@@ -5,7 +5,6 @@ target 'OpenWeather' do
   use_frameworks!
 
   # Pods for OpenWeather
-    pod 'Alamofire'
     pod 'PromiseKit'
 
   target 'OpenWeatherTests' do
